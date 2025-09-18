@@ -1,198 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us - Fortis Style</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us - Fortis Style</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <style>
+<style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fdfdfd;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #2b2b2b;
-      font-size: 1.5rem;
-    }
-
-    .navbar {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #2b2b2b;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #007BFF;
+        font-family: 'Roboto', sans-serif;
+        background-color: #fdfdfd;
+        margin: 0;
+        padding: 0;
     }
 
     .container {
-      background: #fff;
-      padding: 2rem;
-      max-width: 700px;
-      margin: 2rem auto;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      color: #2b2b2b;
+        background: #fff;
+        padding: 32px;
+        max-width: 700px;
+        margin: 32px auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .form-group {
-      margin-bottom: 1.2rem;
+        margin-bottom: 19px;
     }
 
     label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-      color: #333;
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
     }
 
     label span {
-      color: red;
+        color: red;
     }
 
     input,
     select,
     textarea {
-      width: 100%;
-      padding: 0.7rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
     }
 
     textarea {
-      resize: vertical;
+        resize: vertical;
     }
-
+    
     button {
-      background-color:#18ca4b;
-      border: none;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      color: #333;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+        background-color: #fce7e7;
+        border: 1px solid #e0b0b0;
+        padding: 13px 32px;
+        font-size: 16px;
+        color: #555;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: auto;
+        display: block;
     }
 
     button:hover {
-      background-color: #53e558;
+        background-color: #f9dcdc;
     }
-
+    
     .form-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
-    .form-group.small {
-      flex: 1 0 100px;
+    .form-row .form-group {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 19px;
+    }
+    
+    .form-row.two-col .form-group {
+        flex: 1 1 0%;
+        min-width: 150px;
     }
 
-    @media (max-width: 600px) {
-      .form-row {
-        flex-direction: column;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
+    .form-row.three-col .form-group {
+        flex: 1;
+        min-width: 150px;
     }
-  </style>
+    
+    .form-group.country-code {
+        flex: 0 0 80px;
+        min-width: 80px;
+    }
+
+    .form-row.three-col .form-group:not(.country-code) {
+        flex: 1;
+    }
+
+</style>
 </head>
 <body>
 
 
-
-  <div class="container">
+<div class="container">
     <form>
-      <div class="form-group">
-        <label for="feedbackType">Type of Feedback<span>*</span></label>
-        <select id="feedbackType" required>
-          <option value="">Select Type of Feedback</option>
-          <option>General</option>
-          <option>Complaint</option>
-          <option>Appreciation</option>
-        </select>
-      </div>
-
-      <div class="form-row">
         <div class="form-group">
-          <label for="firstName">First Name<span>*</span></label>
-          <input type="text" id="firstName" required>
+            <label for="feedbackType">Type of Feedback<span>*</span></label>
+            <select id="feedbackType" required>
+                <option value="">Select Type of Feedback</option>
+                <option>General</option>
+                <option>Complaint</option>
+                <option>Appreciation</option>
+            </select>
         </div>
 
-        <div class="form-group">
-          <label for="lastName">Last Name<span>*</span></label>
-          <input type="text" id="lastName" required>
-        </div>
-      </div>
+        <div class="form-row two-col">
+            <div class="form-group">
+                <label for="firstName">First Name<span>*</span></label>
+                <input type="text" id="firstName" required>
+            </div>
 
-      <div class="form-row">
-        <div class="form-group small">
-          <label for="countryCode">Country Code</label>
-          <input type="text" id="countryCode" value="+91">
-        </div>
-
-        <div class="form-group">
-          <label for="mobile">Mobile Number<span>*</span></label>
-          <input type="tel" id="mobile" required>
+            <div class="form-group">
+                <label for="lastName">Last Name<span>*</span></label>
+                <input type="text" id="lastName" required>
+            </div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email<span>*</span></label>
-          <input type="email" id="email" required>
-        </div>
-      </div>
+    <div class="form-row three-col">
+            <div class="form-group country-code">
+                <label for="countryCode">Country Code</label>
+                <input type="text" id="countryCode" value="+91" readonly>
+            </div>
 
-      <div class="form-group">
+            <div class="form-group">
+                <label for="mobile">Mobile Number<span>*</span></label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<span>*</span></label>
+                <input type="email" id="email" required>
+            </div>
+    </div>
+
+    <div class="form-group">
         <label for="hospital">Hospitals<span>*</span></label>
         <select id="hospital" required>
-          <option value="">Select Hospital</option>
-          <option>Fortis Delhi</option>
-          <option>Fortis Bangalore</option>
-          <option>Fortis Mumbai</option>
+            <option value="">Select Hospital</option>
+            <option>Fortis Delhi</option>
+            <option>Fortis Bangalore</option>
+            <option>Fortis Mumbai</option>
         </select>
-      </div>
+    </div>
 
-      <div class="form-group">
+    <div class="form-group">
         <label for="feedback">Feedback</label>
         <textarea id="feedback" rows="4"></textarea>
-      </div>
+    </div>
 
-      <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
     </form>
-  </div>
+</div>
 
 </body>
 </html>
