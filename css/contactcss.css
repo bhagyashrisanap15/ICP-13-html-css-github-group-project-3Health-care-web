@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
 .contact-banner {
   position: relative;
   width: 100%;
@@ -87,12 +88,95 @@ body, html {
 .iframe-links a:hover {
   background-color: #ADEED9;
 }
+.ask-us-section {
+            background-color: #fdfdfd;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
 
+        .ask-us-section .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
+        .ask-us-section h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
 
+        .ask-us-content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
 
+        .ask-us-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+        }
 
+        .ask-us-input-container {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            margin-bottom: 10px;
+        }
 
+        .ask-us-input {
+            width: 100%;
+            padding: 15px 20px;
+            padding-right: 50px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 1rem;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .ask-us-input:focus {
+            outline: none;
+            border-color: #66afe9;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05), 0 0 8px rgba(102,175,233,0.6);
+        }
+
+        .ask-us-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+        }
+
+.chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .chatbot-icon:hover {
+            transform: scale(1.05);
+        }
 
 
 
