@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Fortis Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #2b2b2b;
+      font-size: 1.5rem;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #007BFF;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      max-width: 700px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2b2b2b;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    label span {
+      color: red;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color:#18ca4b;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      color: #333;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #53e558;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .form-group.small {
+      flex: 1 0 100px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        flex-direction: column;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="feedbackType">Type of Feedback<span>*</span></label>
+        <select id="feedbackType" required>
+          <option value="">Select Type of Feedback</option>
+          <option>General</option>
+          <option>Complaint</option>
+          <option>Appreciation</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name<span>*</span></label>
+          <input type="text" id="firstName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name<span>*</span></label>
+          <input type="text" id="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group small">
+          <label for="countryCode">Country Code</label>
+          <input type="text" id="countryCode" value="+91">
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number<span>*</span></label>
+          <input type="tel" id="mobile" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span>*</span></label>
+          <input type="email" id="email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="hospital">Hospitals<span>*</span></label>
+        <select id="hospital" required>
+          <option value="">Select Hospital</option>
+          <option>Fortis Delhi</option>
+          <option>Fortis Bangalore</option>
+          <option>Fortis Mumbai</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
