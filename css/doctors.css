@@ -1,0 +1,12 @@
+body{
+    background-color: #0ABAB5;
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    height: 60px;
+    text-align: center; 
+    color: #0F172A; 
+    background:white; 
+
+}
