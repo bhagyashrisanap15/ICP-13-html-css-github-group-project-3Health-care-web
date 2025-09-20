@@ -57,3 +57,14 @@
     .navbar ul li a:hover {
      color: #0abab5;
      }
+      .navbar .contact-btn {
+      background: orange;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar .contact-btn:hover {
+      background: #0097a7;
+    }
