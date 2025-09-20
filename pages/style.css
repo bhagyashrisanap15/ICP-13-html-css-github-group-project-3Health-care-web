@@ -39,3 +39,19 @@
   border-radius: 6px;
   font-size: 14px;
 }
+.btn.green {
+  background: #16a34a;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn.green:hover {
+  background: #128838;
+}
