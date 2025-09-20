@@ -11,5 +11,33 @@
       <p class="subtitle">
         Fill in the form below to schedule a consultation with our expert doctors.
       </p>
-  </div>
+     </div>
+  <form class="appointment-form">
+        <div class="form-group">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+          <input type="date" required>
+          <select required>
+            <option value="">Select Doctor</option>
+            <option>Dr. A. Sharma — Cardiologist</option>
+            <option>Dr. R. Patel — Surgeon</option>
+            <option>Dr. S. Khan — Pediatrician</option>
+          </select>
+        </div>
+
+        <textarea rows="4" placeholder="Additional Notes (Optional)"></textarea>
+
+        <button type="submit" class="btn green">Confirm Appointment</button>
+      </form>
+    </div>
   </section>
+</body>
+</html>
