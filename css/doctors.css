@@ -3,10 +3,47 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .heading{
     height: 60px;
     text-align: center; 
     color: #0F172A; 
-    background:white; 
+    background:white;
+}
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+    background:white;
+    margin: 10px 30px;
+    border-radius: 30px;
+}
+
+h2{
+    color:#0F172A;
+    background:white;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    margin: 5px auto;
+    border-radius: 50px;
+}
+
+.card{
+    background:#ADEED9;
+    height: 275px;
+    width: 250px;
+    box-shadow: 1px 1px 3px 0 #E0F2FE ;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 5px;
+    font-family: system-ui;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px 1px hsl(178, 89%, 71%);
+    margin-bottom: 5px;
 }
