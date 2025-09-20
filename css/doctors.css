@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 
-.heading{
+.pri-heading{
     height: 60px;
     text-align: center; 
     color: #0F172A; 
@@ -22,7 +22,7 @@ body{
     border-radius: 30px;
 }
 
-h2{
+.sec-heading{
     color:#0F172A;
     background:white;
     text-align: center;
