@@ -103,3 +103,90 @@
     .info-text .btn:hover {
       background: #0097a7;
     }
+      .login-form {
+      background: #fff;
+      color: #333;
+      padding: 25px;
+      border-radius: 10px;
+      width: 300px;
+      margin-right: 100px;
+    }
+   
+    .login-form h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+      color:#06c167 ;
+    }
+  
+    .login-form input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background: #06c167;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background: #049a52;
+      box-shadow: #333;
+      transform: scale(1.05);
+    }
+    .body2{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+     
+    }
+    h2{
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #333;
+      padding: 50px 20px;
+      color: #008080;
+      text-align: center;
+
+    }
+    .card-container {
+    height:250px;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    .card {
+     border: none;
+     text-align: center;
+     dispay:inline-block;
+     width: 60%;
+     margin-bottom: 10px;
+         }
+    .card:hover{
+     border: 1px solid black;
+     border-radius: 10px;
+     box-shadow: 0 0 10px black;
+    }
+    .card-img {
+     height: 70px;
+     width: auto;
+     align-items: center;
+     margin-top: 15px;
+    }
+    .card h3 {
+      font-size: 18px;
+      color:black ;
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
