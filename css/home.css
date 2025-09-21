@@ -1,10 +1,12 @@
- body {
+  body {
+
       color: #fff;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
+
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -14,17 +16,18 @@
       position: fixed;
       top: 0;
       left: 0;
-      width:92%;
+      width: 92%;
       z-index: 1000;
     }
-    .navbar img{
+
+    .navbar img {
       height: 50px;
       margin-left: 15px;
       width: 50px;
       border-radius: 50%;
 
     }
-  
+
     .navbar .logo {
       display: flex;
       align-items: center;
@@ -33,30 +36,35 @@
       font-weight: bold;
       color: #0abab5;
       margin-right: 250px;
-     
+
     }
+
     .navbar .logo span {
-      color:#0abab5;
+      color: #0abab5;
       font-weight: bold;
       font-size: 28px;
 
-      
+
     }
+
     .navbar ul {
       list-style: none;
       display: flex;
       gap: 70px;
     }
+
     .navbar ul li a {
       text-decoration: none;
       color: #333;
       font-weight: 500;
       transition: color 0.3s;
     }
+
     .navbar ul li a:hover {
-     color: #0abab5;
-     }
-      .navbar .contact-btn {
+      color: #0abab5;
+    }
+
+    .navbar .contact-btn {
       background: orange;
       padding: 10px 20px;
       border-radius: 5px;
@@ -64,32 +72,38 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .navbar .contact-btn:hover {
       background: #0097a7;
     }
-         .text {
+
+    .text {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 100vh;
       padding: 0 80px;
       background-color: #00E0C7;
-    
+
     }
+
     .info-text {
       max-width: 50%;
 
     }
+
     .info-text h1 {
       font-size: 45px;
       font-weight: bold;
       margin-bottom: 20px;
     }
+
     .info-text p {
       margin-bottom: 30px;
       font-size: 16px;
       line-height: 1.6;
     }
+
     .info-text .btn {
       background: orange;
       padding: 12px 25px;
@@ -97,12 +111,14 @@
       color: #fff;
       font-weight: bold;
       text-decoration: none;
-      
+
     }
+
     .info-text .btn:hover {
       background: #0097a7;
     }
-      .login-form {
+
+    .login-form {
       background: #fff;
       color: #333;
       padding: 25px;
@@ -110,14 +126,14 @@
       width: 300px;
       margin-right: 100px;
     }
-   
+
     .login-form h3 {
       text-align: center;
       margin-bottom: 20px;
       font-size: 20px;
-      color:#06c167 ;
+      color: #06c167;
     }
-  
+
     .login-form input {
       width: 90%;
       padding: 10px;
@@ -136,19 +152,22 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     .login-form button:hover {
       background: #049a52;
       box-shadow: #333;
       transform: scale(1.05);
     }
-    .body2{
+
+    .body2 {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
-     
+
     }
-    h2{
-      font-size: 30px;
+
+    h2 {
+      font-size: 24px;
       margin-bottom: 40px;
       color: #333;
       padding: 50px 20px;
@@ -156,51 +175,57 @@
       text-align: center;
 
     }
+
     .card-container {
-    height:250px;
-    display: flex;
-    justify-content: space-between;
-    
+      height: 250px;
+      display: flex;
+      justify-content: space-between;
+
     }
+
     .card {
-     border: none;
-     text-align: center;
-     dispay:inline-block;
-     width: 50%;
-     margin-bottom: 10px;
-         }
-    .card:hover{
-     border: 2px solid black;
-     border-radius: 10px;
-    
+      border: none;
+      text-align: center;
+      dispay: inline-block;
+      width: 60%;
+      margin-bottom: 10px;
     }
+
+    .card:hover {
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 10px black;
+    }
+
     .card-img {
-     height: 70px;
-     width: auto;
-     align-items: center;
-     margin-top: 15px;
+      height: 70px;
+      width: auto;
+      align-items: center;
+      margin-top: 15px;
     }
+
     .card h3 {
-      font-size: 20px;
-      color:black ;
+      font-size: 18px;
+      color: black;
       margin: 10px 0 5px;
     }
+
     .card p {
-      font-size: 20px;
+      font-size: 15px;
       color: #555;
     }
+
     @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 15px 20px;
     width: 100%;
-    
   }
 
   .navbar .logo {
     margin: 0 auto 15px auto;
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .navbar ul {
@@ -222,7 +247,7 @@
   }
 
   .navbar .contact-btn {
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .text {
@@ -236,116 +261,22 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
-
   .login-form {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
-
   .card-container {
     flex-direction: column;
     align-items: center;
     gap: 15px;
     height: auto;
   }
-
   .card {
     width: 80%;
   }
 }
-  body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #FFFFFF;
-      color: #000000;
-    }
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background: #fff;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar img {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-    }
-
-    .navbar .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 28px;
-      font-weight: bold;
-      color: #0abab5;
-    }
-
-    .navbar .logo span {
-      color: #0abab5;
-      font-weight: bold;
-      font-size: 28px;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .navbar ul li a:hover {
-      color: #0abab5;
-    }
-
-    .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px; 
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  z-index: 1000;
-  box-sizing: border-box;
-}
-
-.navbar .contact-btn {
-  background: orange;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-left: 20px; 
-}
-
-.navbar .contact-btn:hover {
-  background: #ff9800;
-  transform: translateY(-2px);
-}
-
-
+ 
 footer {
   background: #0abab5;
   color: #fff;
