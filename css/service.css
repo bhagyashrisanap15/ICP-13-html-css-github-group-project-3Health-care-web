@@ -393,3 +393,15 @@ footer {
   }
 }
 
+.setimage{
+  display:none;
+}
+@media screen and (min-width:200px) and (max-width:800px)
+ {
+  .setimage{
+  display:flex;
+}
+}
+.happy{
+  margin-right:50px;
+}
