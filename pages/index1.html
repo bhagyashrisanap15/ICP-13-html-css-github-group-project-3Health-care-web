@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,147 @@
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<body>
+  <style>
+    /* Navbar styling copied from your previous code */
+    body {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 92%;
+      z-index: 1000;
+    }
+
+    .navbar img {
+      height: 50px;
+      margin-left: 15px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #0abab5;
+      margin-right: 250px;
+    }
+
+    .navbar .logo span {
+      color: #0abab5;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 70px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #0abab5;
+    }
+
+    .navbar .contact-btn {
+      background: orange;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar .contact-btn:hover {
+      background: #0097a7;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        width: 100%;
+      }
+
+      .navbar .logo {
+        margin: 0 auto 15px auto;
+        font-size: 25px;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      .navbar ul li {
+        width: 100%;
+      }
+
+      .navbar ul li a {
+        display: block;
+        padding: 10px;
+      }
+
+      .navbar .contact-btn {
+        margin: 10px auto;
+      }
+    }
+
+    /* Add top padding so reviews are not hidden behind navbar */
+    .reviews-section {
+      padding-top: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="../images/medical-team.png" alt="Logo">
+      <span>Health<span style="color: orange;">Care</span></span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Appointment</a></li>
+      <li><a href="#">Special Doctors</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+    <a href="#" class="contact-btn">Contact Us</a>
+  </div>
+
+  <!-- Reviews Section -->
   <section class="reviews-section">
     <h2>What Our Patients Say</h2>
 
     <div class="review-container">
-      
       <!-- Review Card 1 -->
       <div class="review-card">
         <div class="review-header">
@@ -21,11 +156,7 @@
           <div class="review-info">
             <div class="review-name">Natasha Raheja</div>
             <div class="review-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
         </div>
@@ -42,11 +173,7 @@
           <div class="review-info">
             <div class="review-name">Vijay Shergil</div>
             <div class="review-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
             </div>
           </div>
         </div>
@@ -63,11 +190,7 @@
           <div class="review-info">
             <div class="review-name">Tanya Sharma</div>
             <div class="review-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
         </div>
@@ -79,50 +202,50 @@
 
     </div>
   </section>
-  <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h3>Medicare Plus</h3>
-                    <p>Your trusted partner for better health, online consultations, and expert care — anytime, anywhere.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul>
-                        <li>Help Center</li>
-                        <li>FAQs</li>
-                        <li>Chat Support</li>
-                    </ul>
-                </div>
-        
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><img src="../images/facebook.jpg" alt="Facebook"></a>
-                        <a href="#"><img src="../images/twitter.jpg" alt="Twitter"></a>
-                        <a href="#"><img src="../images/instagram.jpg" alt="Instagram"></a>
-                    </div>
-                </div>
-        
-                <div class="footer-section">
-                    <h3>Subscribe</h3>
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-            <p class="footer-bottom">© 2025 Medicare Plus. All rights reserved.</p>
-        </footer>
-        
 
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Medicare Plus</h3>
+        <p>Your trusted partner for better health, online consultations, and expert care — anytime, anywhere.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>FAQs</li>
+          <li>Chat Support</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="../images/facebook.jpg" alt="Facebook"></a>
+          <a href="#"><img src="../images/twitter.jpg" alt="Twitter"></a>
+          <a href="#"><img src="../images/instagram.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Medicare Plus. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
