@@ -18,7 +18,7 @@ body{
       justify-content: space-between;
       align-items: center;
       padding: 20px 60px;
-      background: #00E0C7;
+      background: #fff;
       position: fixed;  
       top: 0;
       left: 0;
@@ -393,3 +393,15 @@ footer {
   }
 }
 
+.setimage{
+  display:none;
+}
+@media screen and (min-width:200px) and (max-width:800px)
+ {
+  .setimage{
+  display:flex;
+}
+}
+.happy{
+  margin-right:50px;
+}
