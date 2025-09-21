@@ -118,6 +118,8 @@ body {
 .review-container::-webkit-scrollbar-track {
   background: #f0f0f0;
 }
+
+
 footer {
     text-align: center;
     padding: 10px;
@@ -170,12 +172,21 @@ footer {
 }
 .footer-section button {
     padding: 8px 12px;
-    background: white;
-    color: 0ABAB5;
+    background: white;       /* default background */
+    color: #0ABAB5;          /* default text color */
     border: none;
+    border-radius: 5px;      /* rounded corners */
     cursor: pointer;
     margin-top: 5px;
+    transition: 0.3s ease;   /* smooth hover effect */
 }
+
+/* Hover effect */
+.footer-section button:hover {
+    background-color: red;   /* turns red on hover */
+    color: white;            /* text becomes white */
+}
+
 .footer-bottom {
     margin-top: 20px;
     font-size: 12px;
