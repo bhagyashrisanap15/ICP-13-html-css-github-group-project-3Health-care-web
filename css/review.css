@@ -2,11 +2,11 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #0097a7; /* White background */
-  color: #000000; /* Default text black */
+  background: #0097a7; 
+  color: #000000;
 }
 
-/* Section Styling */
+
 .reviews-section {
   max-width: 1200px;
   margin: 50px auto;
@@ -17,7 +17,7 @@ body {
 .reviews-section h2 {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #0ABAB5; /* Heading stays teal */
+  color: #0ABAB5; 
   margin-bottom: 30px;
   position: relative;
 }
@@ -32,7 +32,7 @@ body {
   border-radius: 4px;
 }
 
-/* Review Container - Single Row */
+
 .review-container {
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ body {
   padding-bottom: 8px;
 }
 
-/* Review Card Styling */
+
 .review-card {
   background: #ADEED9;
   border-radius: 25px;
@@ -60,7 +60,7 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
-/* Header Styling */
+
 .review-header {
   display: flex;
   align-items: center;
@@ -79,22 +79,22 @@ body {
 .review-info .review-name {
   font-weight: bold;
   font-size: 1rem;
-  color: #000000; /* Black name text */
+  color: #000000; 
   margin-bottom: 3px;
 }
 
 .review-rating i {
-  color: #ADEED9; /* Soft teal stars */
+  color: #ADEED9; 
   margin-right: 2px;
   font-size: 1rem;
 }
 
-/* Review Text */
+
 .review-text {
   font-style: italic;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #000000; /* Black text */
+  color: #000000; 
   position: relative;
   padding-left: 24px;
 }
@@ -107,7 +107,7 @@ body {
   font-size: 1rem;
 }
 
-/* Scrollbar Styling */
+
 .review-container::-webkit-scrollbar {
   height: 6px;
 }
@@ -135,7 +135,7 @@ footer {
 }
 
 .footer-section {
-  flex: 1 1 180px; /* flexible and responsive */
+  flex: 1 1 180px; 
   margin-bottom: 20px;
 }
 
@@ -180,7 +180,7 @@ footer {
   color: #fff;
 }
 
-/* Responsive Footer */
+
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
