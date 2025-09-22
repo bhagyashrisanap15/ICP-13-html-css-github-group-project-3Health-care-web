@@ -2,6 +2,8 @@ body{
     background-color: #0ABAB5;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -17,15 +19,12 @@ body{
       width: 92%;
       z-index: 1000;
     }
-
     .navbar img {
       height: 50px;
       margin-left: 15px;
       width: 50px;
       border-radius: 50%;
-
     }
-
     .navbar .logo {
       display: flex;
       align-items: center;
@@ -34,35 +33,18 @@ body{
       font-weight: bold;
       color: #0abab5;
       margin-right: 250px;
-
     }
-
     .navbar .logo span {
       color: #0abab5;
       font-weight: bold;
       font-size: 28px;
-
-
     }
-
     .navbar ul {
       list-style: none;
       display: flex;
-      gap: 70px;
+      gap: 35px;
     }
-
-    .navbar ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .navbar ul li a:hover {
-      color: #0abab5;
-    }
-
-    .navbar .contact-btn {
+      .navbar .contact-btn {
       background: orange;
       padding: 10px 20px;
       border-radius: 5px;
@@ -71,6 +53,27 @@ body{
       font-weight: bold;
     }
 
+    .navbar .contact-btn:hover {
+      background: #0097a7;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #0abab5;
+    }
+    .navbar .contact-btn {
+      background: orange;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
     .navbar .contact-btn:hover {
       background: #0097a7;
     }
@@ -108,10 +111,7 @@ body{
 
   .navbar .contact-btn {
     margin: 10px auto;
-  }
-}
-
-
+  } }
 
 .pri-heading{
     height: 60px;
@@ -250,4 +250,15 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+@media  screen and (max-width:768px) {
+  .pri-heading{
+    height: 60px;
+    text-align: center; 
+    color: #0F172A; 
+    background:white;
+    margin-bottom: 10px;
+    margin-top: 430px;
+}  
 }
