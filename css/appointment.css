@@ -120,6 +120,12 @@
   align-items: center;
   height: 100vh;
 }
+.appointment{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 90px;
+}
 .appointment {
   background:  #fff;
   padding: 60px 20px;
