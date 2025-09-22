@@ -28,15 +28,9 @@ It provides essential pages like *Home, About Us, Appointment, Special Doctors, 
 ![Home Page](images/Screenshot-index.png)
 ![Home Page](images/Screenshot-index2.png)
 
-### 📅 Appointment Page
-![Appointment Page](images/appointment-page.png)
-
-### 📞 Contact Page
-![Contact Page](images/contact-page.png)
-
-
 ---
 ## 👩‍💻 Author
 Developed by *Team Healthcare Project*
+
 
 
