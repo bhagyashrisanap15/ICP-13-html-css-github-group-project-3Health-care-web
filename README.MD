@@ -36,6 +36,4 @@ Developed by *Team Healthcare Project*
   <img src="https://contrib.rocks/image?repo=bhagyashrisanap15/ICP-13-html-css-github-group-project-3Health-care-web" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
-
 
