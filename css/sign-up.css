@@ -7,110 +7,85 @@ body{
 
 
 .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background: #fff;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 92%;
-      z-index: 1000;
-    }
-    .navbar img {
-      height: 50px;
-      margin-left: 15px;
-      width: 50px;
-      border-radius: 50%;
-    }
-    .navbar .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 30px;
-      font-weight: bold;
-      color: #0abab5;
-      margin-right: 250px;
-    }
-    .navbar .logo span {
-      color: #0abab5;
-      font-weight: bold;
-      font-size: 28px;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 35px;
-    }
-      .navbar .contact-btn {
-      background: orange;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.nav-logo {
+  margin-right: auto;
+  margin-left: 50px;
+  height: 55px;
+  width: 60px;
+  border-radius: 50px;
+}
+.nav-name {
+ width: 90%;
+ font-weight: bold;
+ font-size: 27px;
+ 
+}
 
-    .navbar .contact-btn:hover {
-      background: #0097a7;
-    }
+.menu {
+  
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.menu a {
+  color: #555;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: #0abab5;
+}
+.contact-btn {
+  display: block;
+  background-color: #ff9800;
+  border-radius: 10px;
+  height: 20px;
+  width:80px;
+ 
+}
 
-    .navbar ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    .navbar ul li a:hover {
-      color: #0abab5;
-    }
-    .navbar .contact-btn {
-      background: orange;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .navbar .contact-btn:hover {
-      background: #0097a7;
-    }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger img {
+  width: 30px;
+  height: 30px;
+}
+#menu-toggle {
+  display: none;
+}
 
-    @media screen and (max-width: 768px) {
-  .navbar {
+@media (max-width: 768px) {
+  .menu {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 100%;
+    background: #fff;
+    padding: 10px 0;
   }
-
-  .navbar .logo {
-    margin: 0 auto 15px auto;
-    font-size: 25px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .navbar ul li {
-    width: 100%;
-  }
-
-  .navbar ul li a {
+  .menu a {
+    padding: 10px 20px;
     display: block;
-    padding: 10px;
   }
-
-  .navbar .contact-btn {
-    margin: 10px auto;
-  } }
+  .hamburger {
+    display: block;
+  }
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }}
 
   .form-container {
   display: flex;
@@ -121,7 +96,7 @@ body{
   border-radius: 50px 0 50px 0;
   padding: 10px;
   max-width: 900px;
- margin: 120px 210px;
+ margin: 20px 210px;
  
 }
 .sign_up-form {
@@ -174,7 +149,7 @@ body{
   max-width: 395px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 430px;
+  margin-top: 20px;
 }
 }
 
