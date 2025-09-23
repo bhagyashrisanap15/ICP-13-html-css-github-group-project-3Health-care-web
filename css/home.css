@@ -102,6 +102,7 @@ body {
   border-radius: 10px;
   width: 300px;
   margin-right: 100px;
+  margin-top: 50px;
 }
 .login-form h3 {
   text-align: center;
@@ -135,6 +136,7 @@ h2 {
   margin: 40px 0;
   color: #008080;
   text-align: center;
+  margin-top: 100px;
 }
 .card-container {
   display: flex;
@@ -209,6 +211,8 @@ h2 {
     align-items: center;
   }
 }
+
+
 footer {
   background: #0abab5;
   color: #fff;
@@ -227,10 +231,11 @@ footer {
 .footer-section {
   flex: 1 1 180px; 
   margin-bottom: 20px;
+ 
 }
-.footer-section h3 {
+.footer-section h2 {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
 }
 .footer-section ul {
@@ -257,6 +262,8 @@ footer {
   height: 30px;
   margin-right: 10px;
   border-radius: 5px;
+  
+  
 }
 
 .footer-bottom {
@@ -267,7 +274,13 @@ footer {
   padding-top: 10px;
   color: #fff;
 }
-
+.img{
+  margin-left: 200px;
+}
+.icons{
+  margin-left:90px;
+  
+}
 
 @media screen and (min-width:200px) and (max-width:800px) {
   .footer-container {
@@ -289,9 +302,17 @@ footer {
   font-family: Arial, sans-serif;
  
 }
+
+.footer-section.h2 {
+ align-items: center;
+ margin-left: 30px;
+ 
+}
+.mid{
+  margin-left: 150px;
+}
+.icons{
+  margin-top: 10px;
 }
 
-
-
-
-  
+}
