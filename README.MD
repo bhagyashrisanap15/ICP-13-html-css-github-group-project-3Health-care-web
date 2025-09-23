@@ -25,8 +25,8 @@ It provides essential pages like *Home, About Us, Appointment, Special Doctors, 
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/Screenshot-index.png)
-![Home Page](images/Screenshot-index2.png)
+![Home Page](./images/home%20img%20(2).png)
+
 
 ---
 ## 👩‍💻 Author
