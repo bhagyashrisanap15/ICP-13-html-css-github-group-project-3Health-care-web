@@ -155,24 +155,20 @@
        left:100px; 
        color:#009394;
 }
-.humburger{
+.setimages{
   display:none;
 }
-
-
 
 @media screen and (max-width: 768px)
 
 
  {
   
-  
-
-  .humburger{
+  .setimages{
   display:flex;
   
 }
-.setimages{
+.humburger{
   margin-right:50px;
 }
 
