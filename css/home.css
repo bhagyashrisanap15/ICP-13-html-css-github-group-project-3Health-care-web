@@ -31,15 +31,23 @@ body {
   font-size: 18px;
 }
 .menu a {
-  color: #333;
+  color: #555;
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 10px;
-  font-weight: bold;
   transition: 0.3s;
+  font-weight: bold;
 }
 .menu a:hover {
   color: #0abab5;
+}
+.contact-btn {
+  display: block;
+  background-color: #ff9800;
+  border-radius: 10px;
+  height: 20px;
+  width:80px;
+ 
 }
 
 .hamburger {
