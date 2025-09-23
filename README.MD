@@ -32,7 +32,6 @@ It provides essential pages like *Home, About Us, Appointment, Special Doctors, 
 ## 👩‍💻 Author
 Developed by *Team Healthcare Project*
 
-
 <a href="https://github.com/bhagyashrisanap15/ICP-13-html-css-github-group-project-3Health-care-web/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=bhagyashrisanap15/ICP-13-html-css-github-group-project-3Health-care-web" />
 </a>
