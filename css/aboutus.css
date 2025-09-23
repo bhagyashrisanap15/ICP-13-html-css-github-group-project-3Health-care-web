@@ -86,12 +86,11 @@ body {
     display: none;
 }
 
-/* Banner Section */
 .aboutus-banner {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 .banner-img {
@@ -118,7 +117,6 @@ body {
     color: #fff;
 }
 
-/* About Section */
 .about-section {
     max-width: 1200px;
     width: 100%;
@@ -273,7 +271,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer Styles */
 footer {
     background: #0abab5;
     color: #fff;
@@ -348,7 +345,7 @@ footer {
     }
     .banner-img {
         height: 180px;
-        margin-top: 70px;
+        margin-top: 0px;
     }
     .banner-overlay {
         position:relative;

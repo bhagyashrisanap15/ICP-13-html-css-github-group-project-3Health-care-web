@@ -75,12 +75,11 @@ html {
     display: none;
 }
 
-/* Banner section */
 .contact-banner {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 90px;
+    margin-top: 0px;
 }
 
 .banner-overlay {
@@ -115,7 +114,6 @@ html {
     display: block;
 }
 
-/* Contact Info Styles */
 .contact-info {
     padding: 40px 10%;
     background: #fff;
@@ -159,7 +157,6 @@ html {
     vertical-align: middle;
 }
 
-/* Get In Touch */
 .GetInTouch {
     background-color: #fefefe;
     padding: 40px 20px;
@@ -188,7 +185,6 @@ html {
     background-color: #adeed9;
 }
 
-/* Ask Us Section */
 .ask-us-section {
     background-color: #fdfdfd;
     padding: 40px 0;
@@ -348,7 +344,7 @@ footer {
     }
     .banner-img {
         height: 200px;
-        margin-top: 100px;
+        margin-top: 0px;
     }
     .banner-overlay {
         position:relative;
