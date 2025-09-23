@@ -1,349 +1,273 @@
-  body {
 
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background: #fff;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 92%;
-      z-index: 1000;
-    }
-    .navbar img {
-      height: 50px;
-      margin-left: 15px;
-      width: 50px;
-      border-radius: 50%;
-    }
-    .navbar .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 30px;
-      font-weight: bold;
-      color: #0abab5;
-      margin-right: 250px;
-    }
-    .navbar .logo span {
-      color: #0abab5;
-      font-weight: bold;
-      font-size: 28px;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 70px;
-    }
-      .navbar .contact-btn {
-      background: orange;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+  
+  
+}
+.logo-name {
+font-size: 26px;
+font-weight: bold;
+color: #000;
 
-    .navbar .contact-btn:hover {
-      background: #0097a7;
+}
+.nav-logo {
+  height: 55px;
+  width: 55px;
+  border-radius: 40px;
+}
+.menu {
+   
+  
+  font-size: 18px;
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #0abab5;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+  .contact-btn {
+  color: #fff;
+  background: orange; 
+  padding: 12px 25px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+      
     }
-
-    .navbar ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    .navbar ul li a:hover {
-      color: #0abab5;
-    }
-    .navbar .contact-btn {
-      background: orange;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .navbar .contact-btn:hover {
-      background: #0097a7;
-    }
-
-    .text {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100vh;
-      padding: 0 80px;
-      background-color: #00E0C7;
-    }
-    .info-text {
-      max-width: 50%;
-    }
-    .info-text h1 {
-      font-size: 45px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .info-text p {
-      margin-bottom: 30px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .info-text .btn {
-      background: orange;
-      padding: 12px 25px;
-      border-radius: 5px;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .info-text .btn:hover {
-      background: #0097a7;
-    }
-    .login-form {
-      background: #fff;
-      color: #333;
-      padding: 25px;
-      border-radius: 10px;
-      width: 300px;
-      margin-right: 100px;
-    }
-    .input {
-      align-items: center;
-    
-    }
-
-    .login-form h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 20px;
-      color: #06c167;
-    }
-
-    
-    .login-form input {
-      width: 90%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .login-form button {
-      width: 100%;
-      padding: 12px;
-      background: #06c167;
-      border: none;
-      color: #fff;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .login-form button:hover {
-      background: #049a52;
-      box-shadow: #333;
-      transform: scale(1.05);
-    }
-    .body2 {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    h2 {
-      font-size: 24px;
-      margin-bottom: 40px;
-      color: #333;
-      padding: 50px 20px;
-      color: #008080;
-      text-align: center;
-
-    }
-    .card-container {
-      height: 250px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .card {
-      border: none;
-      text-align: center;
-      display: inline-block;
-      width: 60%;
-      margin-bottom: 10px;
-    }
-    .card:hover {
-      border: 1px solid black;
-      border-radius: 10px;
-      box-shadow: 0 0 10px black;
-    }
-    .card-img {
-      height: 70px;
-      width: auto;
-      align-items: center;
-      margin-top: 15px;
-    }
-    .card h3 {
-      font-size: 18px;
-      color: black;
-      margin: 10px 0 5px;
-    }
-
-    .card p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    
- 
+.contact-btn:hover {
+  background: #0097a7;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger img {
+  width: 30px;
+  height: 30px;
+}
+#menu-toggle {
+  display: none;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+  background-color: #00E0C7;
+}
+.info-text {
+  max-width: 50%;
+}
+.info-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.info-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.info-text .btn {
+  background: orange;
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.info-text .btn:hover {
+  background: #0097a7;
+}
+.login-form {
+  background: #fff;
+  color: #333;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 100px;
+}
+.login-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #06c167;
+}
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #06c167;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-form button:hover {
+  background: #049a52;
+  transform: scale(1.05);
+}
+h2 {
+  font-size: 24px;
+  margin: 40px 0;
+  color: #008080;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 40px;
+}
+.card {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+}
+.card:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+.card-img {
+  height: 70px;
+  margin-top: 15px;
+}
+.card h3 {
+  font-size: 18px;
+  color: black;
+  margin: 10px 0 5px;
+}
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+/* Footer */
 footer {
   background: #0abab5;
   color: #fff;
   padding: 40px 60px 20px 60px;
-  font-family: Arial, sans-serif;
   margin-top: 50px;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
-
 .footer-section {
-  flex: 1 1 180px; 
+  flex: 1 1 180px;
   margin-bottom: 20px;
 }
-
 .footer-section h3 {
   margin-bottom: 15px;
   font-size: 18px;
-  color: #fff;
 }
-
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
-
 .footer-section ul li {
   margin-bottom: 10px;
 }
-
 .footer-section ul li a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .footer-section ul li a:hover {
   color: #ff9800;
 }
-
 .social-icons a img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   border-radius: 5px;
 }
-
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
   border-top: 1px solid rgba(255,255,255,0.3);
   padding-top: 10px;
-  color: #fff;
 }
 
-    @media screen and (max-width: 768px) {
-  .navbar {
+@media (max-width: 768px) {
+  .menu {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 100%;
+    background: #fff;
+    padding: 10px 0;
   }
-
-  .navbar .logo {
-    margin: 0 auto 15px auto;
-    font-size: 25px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .navbar ul li {
-    width: 100%;
-  }
-
-  .navbar ul li a {
+  .menu a {
+    padding: 10px 20px;
     display: block;
-    padding: 10px;
+    
   }
-
-  .navbar .contact-btn {
-    margin: 10px auto;
+  .hamburger {
+    display: block;
   }
-
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
   .text {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 20px;
     height: auto;
-    text-align: center;
   }
-
   .info-text {
     max-width: 100%;
-    margin-top:370px;
+    margin-bottom: 20px;
   }
   .login-form {
-    width: 90%;
-    margin-top:120px;
-    display:flex;
-    flex-direction:column;
-    margin-left:90px;
+    margin: 0;
+    width: 100%;
   }
-  .login-form button {
-     
-     margin-left: 5px;
-     margin-right:100px;
-    }
   .card-container {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    height: auto;
-    margin-top:100px;
-    margin-bottom:100px;
-
   }
-  .card {
-    width: 80%;
-  }
-
-   .footer-container {
-  display: flex;
-  flex-direction: column;
-  margin-left:120px;
- 
-}
 }
 
-
-
-
+  

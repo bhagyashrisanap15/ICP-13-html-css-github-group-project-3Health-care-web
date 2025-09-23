@@ -142,14 +142,8 @@
     margin:0px 10px;
     margin-top:50px;
    
-}
-.setimage{
-  display:none;
-}
+    }
 
-.menubtn{
-  margin-right:50px;
-}
 .block{
     position:relative;
 }
@@ -161,19 +155,31 @@
        left:100px; 
        color:#009394;
 }
-
+.setimages{
+  display:none;
+}
 
 @media screen and (max-width: 768px)
 
+
  {
   
+  .setimages{
+  display:flex;
+  
+}
+.humburger{
+  margin-right:50px;
+}
+
+  
      .pic{
-      margin-top: 300px;
+      margin-top: -20px;
     height:600px;
     width:900px;  
 }
     .photo{
-      margin-top: 200px;
+      margin-top:-40px;
       text-align:start; 
       font-size: 30px;
        top:200px; 
@@ -215,7 +221,7 @@
   display:flex;
 }
 .navbar {
-    flex-direction: column;
+  
     align-items: center;
     padding: 15px 20px;
     width: 100%;
@@ -227,12 +233,8 @@
   }
 
   .navbar ul {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    flex-direction: row;
+   display:none;
   }
 
   .navbar ul li {
@@ -246,6 +248,7 @@
 
   .navbar .contact-btn {
     margin: 10px auto;
+    display:none;
   }
   .block{
     margin-top: 100px;
