@@ -333,22 +333,39 @@ footer {
     color: #fff;
 }
 
+
 @media screen and (max-width: 768px) {
     .navbar,
     body,
     .about-section {
         padding: 0;
     }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+   .navbar {
+    padding: 12px 20px;
+}
+
+.nav-logo {
+    margin-left: 40px; /* space before logo */
+    margin-right: 18px; /* space between logo and text */
+    height: 55px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.nav-name {
+    font-weight: bold;
+    font-size: 27px; /* consistent font size */
+    color: #333;
+}
+    .hamburger {
+     display: block;
+}
     .banner-img {
         height: 180px;
         margin-top: 0px;
     }
     .banner-overlay {
-        position:relative;
+        position: relative;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -365,12 +382,11 @@ footer {
         width: 100%;
         background: #fff;
         padding: 10px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 999;
     }
     .menu a {
         padding: 10px 20px;
-        display: block;
-    }
-    .hamburger {
         display: block;
     }
     #menu-toggle:checked + .hamburger + .menu {
