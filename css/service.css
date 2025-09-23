@@ -62,28 +62,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    padding: 10px 0;
-  }
-  .menu a {
-    padding: 10px 20px;
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  #menu-toggle:checked + .hamburger + .menu {
-    display: flex;
-  }
-}
+
 
   
 .container{
@@ -166,17 +145,44 @@
 }
 
 @media screen and (max-width: 768px)
-
-
 {
+  .navbar{
+   z-index:2;
+   position:relative;
+
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+  }
+  .menu a {
+    padding: 10px 20px;
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
 
   
      .pic{
-      margin-top: -20px;
+      position: absolute;
+      z-index:1;
+      margin-top:-50px;
     height:600px;
     width:900px;  
 }
     .photo{
+      position: absolute;
+      z-index: 1;
       margin-top:-40px;
       text-align:start; 
       font-size: 30px;
@@ -185,19 +191,21 @@
        color:#009394;
    }
    .container{
+    
     flex-direction: column;
     width:auto;
     height: 1500px;
     display:flex;
     margin:5px 30px;
     flex-wrap: wrap;
+    margin-top: 100px;
     
     align-items: center;
   }
  .health{
-        
+      
    margin-left:40px;
-    margin-top:50px; 
+    margin-top:600px; 
     text-align:center;
      margin-left:80px;
     color:#00E0C7;
