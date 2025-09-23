@@ -7,99 +7,109 @@
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="../images/logo.jpeg" alt="Logo">
-            <span>Health<span style="color: orange;">Care</span></span>
-        </div>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="appointment.html">Appointment</a></li>
-            <li><a href="doctors.html">Special Doctors</a></li>
-            <li><a href="review.html">Reviews</a></li>
-        </ul>
-        <a href="contact.html" class="contact-btn">Contact Us</a>
+<div class="navbar">
+    <img src="../images/logo.jpeg" alt="logo" class="nav-logo"/>
+    <span class="nav-name">Health<span style="color: orange;">Care</span></span>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <img src="../images/burger-bar.png" alt="menu">
+    </label>
+    <div class="menu">
+        <a href="../index.html">Home</a>
+        <a href="../pages/aboutus.html">About Us</a>
+        <a href="../pages/appointment.html">Appointment</a>
+        <a href="../pages/doctors.html">Special Doctor</a>
+        <a href="../pages/review.html">Reviews</a>
+        <a href="../pages/contact.html" class="contact-btn">Contact</a>
     </div>
-
-    <section class="contact-banner">
-        <img src="../images/contactimg.png" alt="Contact Image" class="banner-img">
-        <div class="banner-overlay">
-            <h2>Contact us</h2>
-            <p>For all types of queries</p>
-        </div>
-    </section>
-
-    <section class="contact-info">
-        <div class="info-box">
-            <h3><img src="../images/logo.jpeg" class="logoicon" alt="Hospital Logo"><span>Health<span style="color: orange;">Care</span></span>&nbsp;Hospital</h3>
-            <p><b><img src="../images/location.png" class="icons" alt="Location Icon"> Address:</b> 36, Sita Nagar, Wardha Road, Nagpur</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.7673224992186!2d79.06484553762832!3d21.103380088809644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf761175ec4f%3A0x79afe78197d674b1!2s36%2C%20Sita%20Nagar%20Rd%2C%20Sita%20Nagar%2C%20Somalwada%2C%20Nagpur%2C%20Maharashtra%20440025!5e0!3m2!1sen!2sin!4v1758218980320!5m2!1sen!2sin" width="100%" height="400" style="border:0; margin-bottom: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p><b><img src="../images/Phone-call.png" class="icons" alt="Phone Icon"> Appointment Queries:</b> <a href="tel:+91 1827323456">+91 1827323456</a></p>
-            <p><b><img src="../images/email.png" class="icons" alt="Email Icon"> Feedback/Complaints:</b> <a href="mailto:feedback@healthcare.com">feedback@healthcare.com</a></p>
-        </div>
-    </section>
-
-    <section class="GetInTouch">
-        <h3>Get In Touch</h3>
-        <div class="iframe-links">
-            <a href="feedback.html" target="myscreen">Feedback</a>
-            <a href="queries.html" target="myscreen">Queries</a>
-        </div>
-        <iframe src="feedback.html" name="myscreen" width="100%" height="500px" style="border: 1px solid #ccc; margin-top: 1rem;"></iframe>
-    </section>
-
-    <section class="ask-us-section">
-        <div class="container">
-            <h2>Feel Free to ask us</h2>
-            <div class="ask-us-content">
-                <img src="../images/thinking.png" alt="Personthinking" class="ask-us-image">
-                <div class="ask-us-input-container">
-                    <input type="text" placeholder="Type your question here..." class="ask-us-input">
-                    <span class="ask-us-icon"></span>
-                </div>
+</div>
+<section class="contact-banner">
+    <img src="../images/contactimg.png" alt="Contact Image" class="banner-img">
+    <div class="banner-overlay">
+        <h2>Contact us</h2>
+        <p>For all types of queries</p>
+    </div>
+</section>
+<section class="contact-info">
+    <div class="info-box">
+        <h3>
+            <img src="../images/logo.jpeg" class="logoicon" alt="Hospital Logo">
+            <span>Health<span style="color: orange;">Care</span></span>&nbsp;Hospital
+        </h3>
+        <p>
+            <b><img src="../images/location.png" class="icons" alt="Location Icon">
+            Address:</b>
+            36, Sita Nagar, Wardha Road, Nagpur
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.7673224992186!2d79.06484553762832!3d21.103380088809644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf761175ec4f%3A0x79afe78197d674b1!2s36%2C%20Sita%20Nagar%20Rd%2C%20Sita%20Nagar%2C%20Somalwada%2C%20Nagpur%2C%20Maharashtra%20440025!5e0!3m2!1sen!2sin!4v1758218980320!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0; margin-bottom: 15px;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+            <b><img src="../images/Phone-call.png" class="icons" alt="Phone Icon">
+            Appointment Queries:</b>
+            <a href="tel:+911827323456">+91 1827323456</a>
+        </p>
+        <p>
+            <b><img src="../images/email.png" class="icons" alt="Email Icon">
+            Feedback/Complaints:</b>
+            <a href="mailto:feedback@healthcare.com">feedback@healthcare.com</a>
+        </p>
+    </div>
+</section>
+<section class="GetInTouch">
+    <h3>Get In Touch</h3>
+    <div class="iframe-links">
+        <a href="../pages/feedback.html" target="myscreen">Feedback</a>
+        <a href="../pages/queries.html" target="myscreen">Queries</a>
+    </div>
+    <iframe src="../pages/feedback.html" name="myscreen" width="100%" height="500px" style="border: 1px solid #ccc; margin-top: 1rem;"></iframe>
+</section>
+<section class="ask-us-section">
+    <div class="container">
+        <h2>Feel Free to ask us</h2>
+        <div class="ask-us-content">
+            <img src="../images/thinking.png" alt="Person thinking" class="ask-us-image">
+            <div class="ask-us-input-container">
+                <input type="text" placeholder="Type your question here..." class="ask-us-input">
+                <span class="ask-us-icon"></span>
             </div>
         </div>
-    </section>
-
-    <img src="../images/chatbot.png" alt="ChatbotIcon" class="chatbot-icon">
+    </div>
+</section>
+<img src="../images/chatbot.png" alt="Chatbot Icon" class="chatbot-icon">
 <footer>
     <div class="footer-container">
-        <div class="footer-section">
-            <h3>Healthcare </h3>
-            <p>Your trusted partner for better health, online consultations, and expert care — anytime, anywhere.</p>
-        </div>
+    
+      <div class="footer-section">
+        <h2><b>HEALTHCARE </b></h2>
+        <p>Your trusted partner for better health, online consultations, and expert care — anytime, anywhere.</p>
+      </div>
 
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </div>
+     
+      <div class="footer-section">
+      <h2><b>QUICK LINKS </b></h2>
+        <ul>
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-        <div class="footer-section">
-            <h3>Support</h3>
-            <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Chat Support</a></li>
-            </ul>
-        </div>
+     
+      
 
-        <div class="footer-section">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><img src="../images/facebook.jpg" alt="Facebook"></a>
-                <a href="#"><img src="../images/twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="../images/instagram.jpg" alt="Instagram"></a>
-            </div>
+      <div class="footer-section">
+        <h2><b>FOLLOW US</b></h2>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><img src="../images/facebook.jpg" alt="Facebook"></a>
+          <a href="https://twitter.com/."><img src="../images/twitter.jpg" alt="Twitter"></a>
+          <a href="https://www.instagram.com/"><img src="../images/instagram.jpg" alt="Instagram"></a>
         </div>
+      </div>
     </div>
 
-    <p class="footer-bottom">© 2025 Healthcare. All rights reserved.</p>
-</footer>
-
+    <p class="footer-bottom">© 2025 Healthcare Plus. All rights reserved.</p>
+  </footer>
 </body>
 </html>
