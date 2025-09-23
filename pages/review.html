@@ -94,6 +94,10 @@
   #menu-toggle:checked + .hamburger + .menu {
     display: flex;
   }
+  .navbar{
+    position:relative;
+    z-index:2;
+  }
 }
 </style>
 <style>
@@ -105,7 +109,7 @@
     <span class="nav-name">Health<span style="color: orange;">Care</span></span>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">
-      <img src=".\images\burger-bar.png" alt="menu">
+      <img src="..\images\burger-bar.png" alt="menu">
     </label>
     <div class="menu">
       <a href="../index.html">Home</a>
@@ -120,7 +124,7 @@
 
   
   <section class="reviews-section">
-    <h2>What Our Patients Say</h2>
+    <h2 class="heading">What Our Patients Say</h2>
 
     <div class="review-container">
     
