@@ -168,9 +168,8 @@ h2 {
 footer {
   background: #0abab5;
   color: #fff;
-  padding: 60px 60px 60px 60px;
+  padding: 40px 60px 20px 60px;
   font-family: Arial, sans-serif;
-  align-items: center;
 }
 
 .footer-container {
@@ -181,7 +180,7 @@ footer {
 }
 
 .footer-section {
-  flex: 1 1 180px; 
+  flex: 1 1 180px; /* flexible and responsive */
   margin-bottom: 20px;
 }
 
@@ -225,15 +224,12 @@ footer {
   padding-top: 10px;
   color: #fff;
 }
-
-
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
 @media (max-width: 768px) {
   .menu {
     display: none;
