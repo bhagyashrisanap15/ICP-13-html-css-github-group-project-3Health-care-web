@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthCare Website</title>
+  <link rel="stylesheet" href="css/home.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar .logo span {
+      color: #0abab5;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .contact-btn {
+      background: orange;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-btn:hover {
+      background: #0097a7;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu-icon img {
+      width: 30px;
+      height: 30px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background: #fff;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        transition: left 0.3s ease;
+      }
+
+      #menu-toggle:checked ~ .nav-links {
+        left: 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="../images/logo.jpeg" alt="logo">
+      <span>HealthCare</span>
+    </div>
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-icon">
+      <img src=".\images\menu.png" alt="menu">
+    </label>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./aboutus.html">About Us</a>
+      <a href="./appointment.html">Appointment</a>
+      <a href="./doctors.html">Special Doctor</a>
+      <a href="./review.html">Reviews</a>
+      <a href="./contact.html" class="contact-btn">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>
