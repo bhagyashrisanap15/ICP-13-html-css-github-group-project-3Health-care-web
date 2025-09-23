@@ -135,7 +135,7 @@
 .block{
     position:relative;
 }
-.photo{
+.text{
     position:absolute;
       text-align: center; 
       font-size: 50px;
@@ -177,13 +177,14 @@
       position: absolute;
       z-index:1;
       margin-top:-50px;
-    height:600px;
-    width:900px;  
+    height:500px;
+    width:735px;
 }
-    .photo{
+
+    .text{
       position: absolute;
       z-index: 1;
-      margin-top:-40px;
+      margin-top:-100px;
       text-align:start; 
       font-size: 30px;
        top:200px; 
@@ -198,7 +199,7 @@
     display:flex;
     margin:5px 30px;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 80px;
     
     align-items: center;
   }
@@ -219,18 +220,16 @@
     border-radius: 10px;
     align-items: center;
   }
-     .pic{
-    height:500px;
-    width:735px;
-}
+ 
  
   .block{
     margin-top: 100px;
   }
-
-
-
 }
+
+
+
+
 
 
 
