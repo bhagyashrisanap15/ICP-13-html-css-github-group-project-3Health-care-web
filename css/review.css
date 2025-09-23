@@ -40,10 +40,14 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 8px;
+  height: 300px;
+  
+  
 }
 
 
 .review-card {
+  height:150px;
   background: #ADEED9;
   border-radius: 25px;
   padding: 20px;
@@ -184,7 +188,34 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer-container {
+    
     flex-direction: column;
     align-items: flex-start;
   }
+  .reviews-container {
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+}
+.review-container {
+   flex-direction: column;
+   margin-top:-10px;
+   gap:80px;
+   padding:20px;
+   height:1100px;
+  
+}
+.review-card {
+
+  width:300px;
+  margin-left: 100px;
+  margin-top: -80px;
+  margin-bottom:15px;
+  
+}
+.heading{
+  position: absolute;
+  z-index:1;
+}
+
 }

@@ -345,8 +345,8 @@ footer {
 }
 
 .nav-logo {
-    margin-left: 40px; /* space before logo */
-    margin-right: 18px; /* space between logo and text */
+    margin-left: 40px;
+    margin-right: 18px;
     height: 55px;
     width: 60px;
     border-radius: 50px;
@@ -354,7 +354,7 @@ footer {
 
 .nav-name {
     font-weight: bold;
-    font-size: 27px; /* consistent font size */
+    font-size: 27px; 
     color: #333;
 }
     .hamburger {

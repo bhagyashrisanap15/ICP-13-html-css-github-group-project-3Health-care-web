@@ -27,7 +27,7 @@ It provides essential pages like *Home, About Us, Appointment, Special Doctors, 
 ### 🏠 Home Page
 ![Home Page](./images/home%20img%20(2).png)
 
-![Home Page](./images/home%20img.png)
+![Home Page](./images/Screenshot%20(139).png)
 ---
 ## 👩‍💻 Author
 Developed by *Team Healthcare Project*
