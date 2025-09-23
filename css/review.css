@@ -40,7 +40,8 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 8px;
-  height:1100px;
+  height: 300px;
+  
   
 }
 
@@ -201,6 +202,7 @@ footer {
    margin-top:-10px;
    gap:80px;
    padding:20px;
+   height:1100px;
   
 }
 .review-card {
