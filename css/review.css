@@ -208,12 +208,14 @@ footer {
 }
 .review-card {
 
-  width:300px;
-  margin-left: 100px;
+  width:250px;
+  margin-left: 0px;
   margin-top: -80px;
   margin-bottom:15px;
+ 
   
 }
+
 .heading{
   position: absolute;
   z-index:1;
