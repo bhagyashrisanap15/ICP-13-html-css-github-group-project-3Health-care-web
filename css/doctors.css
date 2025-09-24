@@ -235,4 +235,13 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
 }  
+.card-container{
+margin-top: 50px;
+}
+.sec-heading{
+  margin-top: 60px;
+}
+.pri-heading{
+    height: 80px;
+}
 }
